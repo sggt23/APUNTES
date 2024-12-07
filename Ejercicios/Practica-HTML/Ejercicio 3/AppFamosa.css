@@ -1,0 +1,41 @@
+.Estilo{
+    font-family: "Figtree", sans-serif;
+}
+
+.EstiloFB{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.EstiloX{
+    font-family: "Quantico", sans-serif;
+}
+
+.EstiloTiktok{
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+}
+
+.EstiloYutu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#Instagram{
+    margin: 10px 10px 10px 10px;
+}
+
+div#Facebook{
+    margin: 10px 10px 10px 10px;
+}
+
+div#Twitter{
+    margin: 10px 10px 10px 10px;
+}
+
+div#TikTok{
+    margin: 10px 10px 10px 10px;
+}
+
+div#Youtube{
+    margin: 10px 10px 10px 10px;
+}
+

@@ -1,0 +1,63 @@
+/* Display grid
+
+Grid se refiere a una plantilla basada en 12 columnas que podemos utilizar para indicar 
+como queremos que se muestren los elementos dentro de la pantalla de mi navegador.
+Estas 12 columnas son un valor previamente definido, no modificable, por la cual, según
+el espacio que ocupe cada uno de mis elementos, se ordenarán dentro de estas 12 columnas SIEMPRE 
+
+Propiedades que podemos usar con Grid:
+
+//----------------------Manipular la plantilla
+
+-grid-template-colums: indica como debe de distribuirse y ajustarse la plantilla a manera
+de columnas dentro del elemento ancestro según el tamaño que se especifique.
+
+-grid-template-rows: indica como debe de distribuirse y ajustarse a la plantilla a manera de filas
+según los elementos que existan dentro de mi elemento ancestro. 
+(podemos modificar la cuadrilla en ambos sentidos, de columnas y de filas)
+
+    valores 
+    medidas:pixeceles, centimetros, rem, %, etc 
+    auto: mide y ajusta de manera automática el tamaño de cada una de mis columnas
+
+
+//----------------------Manipular individualmente cada elemento dentro de mi plantilla
+Utilizamos:
+
+    -grid-column: (inicio/final): el elemento puede especificarse que, dentro de la cuadricula que yo modifiqué, inicie y termine en una columna 
+    diferente a la original o por defecto.
+
+    -grid-row: (inicio/final): el elemento puede especificarse que, dentro de la cuadricula que yo modifiqué, inicie y termine en una fila diferente
+     a la original o por defecto.
+
+    -grid-area: (inicio-fila/inicio-columna/fin-fila/fin-columna): combina los valores que pueden recibir grid-colum y grid-row dentro de un mismo valor.
+
+*/
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 30px;
+}
+
+/* div#grid-item-one {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    grid-area: 2/1/3/4;
+} */
+
+@media (max-width: 750px) {
+  div.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  }
+
+div.item {
+    width: 70px;
+    height: 40px;
+    font-size: 35px;
+    text-align: center;
+
+}

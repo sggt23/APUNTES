@@ -1,0 +1,126 @@
+/* Introducción a CSS */
+/*CSS - Introducción
+
+Objetivos de aprendizaje:
+
+* Explicar CSS.
+
+* Definir un documento CSS y hacer referencia a él desde una página HTML.
+
+* Agregar estilos a una etiqueta con propiedades CSS usando el atributo de estilo.
+
+* Agregar estilos a una etiqueta con propiedades CSS usando la etiqueta <style>
+
+* Agregar estilos a una etiqueta usando el atributo de identificación de una etiqueta.
+
+* Explicar y usar algunas de las propiedades CSS más comunes:
+
+	- Ancho y Alto
+	- Usar el modelo de caja CSS
+	- Margen
+    - Relleno
+	- Borde
+	- Color
+	- Fondo
+	- Fuente
+     */
+
+     /* Colores
+     Dentro de CSS tenemos multiples formas de agregar un
+     color a un elemento
+
+     Propiedades de color:
+     Color: modifica el color de un tecxto
+     background-color: modifica el color de fondo de u
+     elemento
+     Brillo / lightness
+    Matiz / hue
+
+     ¿Cómo podemos agregar un valor de color a un elemento?
+     Nombre del color
+     Código Hexadecimal (#FFFFFF)
+     */
+     .test{
+        color:#100b75 ;
+        background-color: rgba(173, 15, 15, 0.386);
+    }
+    body{
+        /* background-color: green; */
+        background-image: url(./Image20241122105318.jpg);
+        background-size: 500px;
+    }
+
+    p#párrafo-dos{
+        color: rgb(41, 151, 61);
+        background-color: purple;
+    }
+    div span{
+        color: aqua;
+    }
+    span{
+        color: red;
+    }
+
+        /* Fuentes de texto */
+
+        /* 
+        Nombres de las propiedad de CSS que me permiten
+        modificar la tipografía de un título o de un 
+        texto: 
+
+        - font-family: estilo de la tipografía
+
+       -  font-size: aumenta o disminuye el tamaño de 
+        mi fuente de texto
+        */
+
+        h1#title, p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            font-size: 50px;
+            padding: 10px;
+            border: 10px blueviolet dotted;
+        }
+
+        p.text{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        
+        p{
+            margin: 10px 5px 20px 2px;
+
+        }
+
+        /* Modelo de caja/ Box model */
+
+        /* Cada uno de nuestros elementos dentro de HTML
+        se distribuyen a manera de cajas. Estas cajas 
+        nos permiten modificar el tamaño que uno de estos elementos
+        abarca dentro de la página de nuestro navegador
+        
+        Se distribuyen de la siguiente manera:
+        
+        -Contenido(primer nivel): se refiere a la etiqueda/elemento
+        (texto, imagen, hípervínculo, etc.)
+
+        -Padding o relleno (segundo nivel): es el espacio que existe
+        desde el contenido hasta el borde de mi elemento
+
+        -Border (tercer nivel): se refiere al final de mi elemento
+
+        -Margen o marging(cuarto nivel): es el espacio que existe de mi elemento
+        respecto a los demás que existen dentro de mi página.
+
+        Propiedades y valores que adquieren:
+        
+        Padding: auto, auto, auto, auto;
+        Marging: auto, auto, auto, auto;
+        Border: tamaño, color, estilo;
+        */
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - HTML</title>
+</head>
+<body>
+    <!-- 
+    
+    Formularios en HTML
+
+    Un formulario es un elemento donde regularmente encontramos
+    una estructura con la que nuestros usuarios finales pueden 
+    interactuar para realizar diversas acciones, entre las principales
+    encontramos:
+
+    - Registro
+    -Inicios de sesión
+
+    Para construir o indicar que un elemento se trata de un formulario se utiliza
+    la siguiente etiqueta:
+
+    <form>
+
+        Principalmente, esta etiqueta utiliza dos atributos:
+
+        -action: se refiere al archivo o dónde la información colocada en los
+        campos de entrada de datos serán enviados. Ejemplo; "./script.js"  (para validar la información en los campos)
+
+        -method: hace referencia al método HTTP con el que el formulario debe de trabajar la información recibida en los
+        campos de entrada de datos. Los valores que se pueden colocar son los siguientes:
+
+            -  GET: Sus características son:
+                    Un límite de caracteres que se pueden enviar, ese límite es de 3000 caracteres. 
+                    Los datos recibidos en las entradas de datos se muestran en la URL del navegador. 
+                    *NO se recomienda utilizar este método para datos sensibles*
+
+            - POST: Muestra las siguientes diferencias con respecto a GET
+            -No hay límite de caracteres que se puedan recibir
+            *Los datos NO se muestran en la URL, por tanto, es el método recomendado para cuando
+            necesitamos enviar la información recibida, por ejemplo, a una base de datos. 
+    
+    --------------------------------------------------------------------------------------------------------------------------------------
+    Los elementos que forman parte de un formulacion son los siguientes:
+
+    <label>: Representa una etiqueta con un texto que nos indica la información que debe colocarse dentro de un campo de entrada en particular
+            Atributos de la etiqueta <label>
+                for: por temas de accesibilidad, es importante coloquemos este atributo, pues, hace referencia al input con el que relaciona. 
+                El valor que debe adquirir es un id, previamente colocado dentro de mi input. 
+
+    <input>: Es el elemento de entrada de datos donde el usuario final coloca la información solicitada.
+    
+    Atributos de la etiqueta <input>
+   
+    type: indicar el tipo de campo de entrada que se muestra en la ventana del navegador.
+    Algunos de los tipos de input que tenemos disponibles son:
+    -enviar (submit)
+    -número (number)
+    -contraseña (password)
+    -texto (text)
+    -radio
+    -casilla de verificación (checkbox)
+    -archivo (file)
+    -botón (button)
+
+    Por cada label tiene que existir un input
+    -->
+        <form action="./script.js" method="get">
+            <label for="name-ipt">Name</label>
+            <input type="text" id="name-ipt">
+            <label for="Age"</label>
+            <input type= "number" name="Age" id="Age-ipt" max="100" min="0">
+            <label for="Email"</label>
+            <input type="email" name="Email" id="Email-ipt" required>
+            <label for="Password"</label>
+            <input type="password" name="Password" id="Password-ipt">
+            <label for="Image"</label>
+            <input type="file" name="user-image" id="image-ipt">
+            <label for="I agree:"</label>
+            <input type="checkbox" name="accept" id="agree-checkbook">
+            <label for="I disagree:"</label>
+            <input type="checkbox" name="accept" id="disagree-checkbox">
+            <label for="Option 1"</label>
+            <input type="radio" name="option-ipt" id="option-ipt-one">
+            <label for="Option 2"</label>
+            <input type="radio" name="option-ipt" id="option-ipt-two">
+            <input type="submit">
+            <button type="">Enviar</button>    
+        </form>
+</body>
+</html>
