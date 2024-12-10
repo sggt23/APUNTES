@@ -310,7 +310,7 @@ Recomendaciones!!
 */
 //----Reasignación de variables
 let miNombre = "Sofi";
-console.log(`Nombre origina: $(miNombre)`);
+console.log(`Nombre original: $(miNombre)`);
 miNombre = "Sofía"
 console.log(`Nombre modificado: $(miNombre)`);
 

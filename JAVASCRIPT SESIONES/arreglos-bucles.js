@@ -124,3 +124,86 @@ colores.forEach(color => console.log(color.toLocaleUpperCase()));
 //.map();
 let coloresMayusculas = colores.map(e => e.toUpperCase());
 console.log(coloresMayusculas);
+
+/////////////////////////////////////////////////////////////////////////////
+/*
+Bucles 
+
+Un ciclo, bucle o iteración (son los mismo) se trata de una estructura de flujo
+que trabaja de la siguiente manera:
+
+Tiene un punto de inicio, sobre el cual comenzarán a ejecutarse las instrucciones
+definidos dentro del bloque. La cantidad de veces que las instrucciones se van a repetir
+depende de una condición (expresiones lógicas) que: mientras sean verdaderas, las instrucciones se
+repiten. Cuando es falso, se detiene el proceso de ejecución.
+
+¿Qué ciclos podemos usar el JS?
+
+ciclo for: es una forma de definir un bucle dentro de JS, su estructura/sintaxis están definidas de
+la siguiente manera:
+
+    -Palabra reservada for
+    -(inicio; condición; contador (cuantas veces ejecuto la instrucción para cumplir la condición))
+    -Llaves que delimitan el bloque de instrucciones que llevará a cabo el bucle.
+
+
+*/
+//Ejemplo del uso del ciclo for
+//Ciclo que imprima los números del 0 al 100
+
+for(let i = 0; i<=100; i++){
+    console.log(i);
+}
+
+//Ejemplo 2 del ciclo for
+// Ciclo que imprima los números del 0 al 100, contando de 10 en 10
+for(let n = 0; n<=100; n+=10){
+    console.log(n);
+}
+
+//Ejemplo 3 del uso del ciclo for
+//Ciclo que imprima los elementos de un arreglo
+for(let i = 0; i<colores.length; i++){
+    console.log(colores[i])
+}
+
+/*   While
+
+Es otro tipo de bucle dentro de JS, es similar al bucle for, pero tienen una diferencia importante:
+
+Mientras que el ciclo While tiene una sintaxis más flexible,
+el bucle for tiene una estructura definida previamente.
+
+Sintaxis:
+
+    -palabra resevada while
+    -(condición)
+    -bloque donde se encuentran las instrucciones que ejecuta el ciclo
+
+
+*/
+//Ejemplo de bucle con while
+let i = 0;
+while(i<=100){
+    console.log(i);
+    i++;
+}
+
+/* Do while
+
+Es lo mismo que un bucle while, pero esta estructura nos pmerite primero llevar a cabo
+una instrucción y, posteriormente, evaluar la condición del ciclo.
+
+Sintaxis:
+
+    -palabra reservada Do
+    -bloque de código con las instruccines que ejecuta el ciclo
+    -palabra reservada while
+    -(condición)
+
+*/
+
+do{
+    console.log(i);
+    i++;
+}while(i<=100)

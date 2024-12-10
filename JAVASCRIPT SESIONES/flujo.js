@@ -86,6 +86,14 @@ if(30 == '30'){
 
 //-----------Ejercicios de practica
 
+//Declara una función para cada palabra
+//Calcular el perimetro de un circulo
+let pi = 3.1416;
+let radio = 5;
+let perimetroCirculo = [pi*(radio*2)]
+console.log(`El perímetro de un círculo dado su radio con valor de 5, es ${perimetroCirculo}`)
+
+
 /*
 if - else
 
