@@ -12,7 +12,7 @@ datps dentro de una misma variable.
 ¿Cómo puedo declarra un arreglo?
 
     1.Declarar el arreglo con sus elementos
-    2.Construir un arreglo a partir de la clase Arrar
+    2.Construir un arreglo a partir de la clase Array
     3.Definir un arreglo vacío y agregar elementos a través del índice que
     específiquemos.
 
