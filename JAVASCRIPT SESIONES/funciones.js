@@ -10,7 +10,7 @@ Pasos para declarar una función:
         1.Palabra reservada -function
         2.Darle un nombre
         3.Agregar los paréntesis para los parámetros de la función
-        4.LLaves que indican donde inicia y donde termina la función
+        4.LLaves que indican donde inicia y donde termina la función {}
          */
 
 
